@@ -1,5 +1,20 @@
-const answer = prompt("What is the password?");
+const getRandomNumber = () => {
+    const randomNumber = Math.floor(Math.random() * 6) + 1;
+    return randomNumber;
+};
 
-if (answer === "12345") {
-    document.querySelector("main").innerHTML = "<p>Welcome, admin</p>";
-}
+const combineString = (string1, string2) => string1 + " " + string2;
+
+const getArea = (width, length, unit) => {
+    const area = width * length;
+    return `${area} ${unit}`;
+};
+
+num = getRandomNumber();
+console.log(num);
+
+string = combineString("Arrow", "Syntax!");
+console.log(string);
+
+area = getArea(12, 4, "px");
+console.log(area);
