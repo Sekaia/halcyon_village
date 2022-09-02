@@ -1,20 +1,11 @@
-const getRandomNumber = (lower, upper) => {
-    const randomNumber = Math.floor(Math.random() * (upper - lower + 1)) + lower;
-    return randomNumber;
-};
+const getRandomNumber = (lower, upper) => Math.floor(Math.random() * (upper - lower + 1)) + lower;
 
 const combineString = (string1, string2) => string1 + " " + string2;
 
-const getArea = (width, length, unit) => {
-    const area = width * length;
-    return `${area} ${unit}`;
-};
+const getArea = (width, length, unit) => `${width * length} ${unit}`;
 
-num = getRandomNumber(10, 20);
-console.log(num);
+console.log(getRandomNumber(10, 20));
 
-string = combineString("Arrow", "Syntax!");
-console.log(string);
+console.log(combineString("Arrow", "Syntax!"));
 
-area = getArea(12, 4, "px");
-console.log(area);
+console.log(getArea(12, 4, "px"));
