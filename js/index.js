@@ -1,5 +1,5 @@
-const getRandomNumber = () => {
-    const randomNumber = Math.floor(Math.random() * 6) + 1;
+const getRandomNumber = (lower, upper) => {
+    const randomNumber = Math.floor(Math.random() * (upper - lower + 1)) + lower;
     return randomNumber;
 };
 
@@ -10,7 +10,7 @@ const getArea = (width, length, unit) => {
     return `${area} ${unit}`;
 };
 
-num = getRandomNumber();
+num = getRandomNumber(10, 20);
 console.log(num);
 
 string = combineString("Arrow", "Syntax!");
