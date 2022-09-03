@@ -6,14 +6,25 @@ function displayArray(arr){
     return html;
 }
 
-let playlist = [
-    "Creep",
-    "Slow Dancing in the Dark",
-    "Glimpse of Us",
-    "Conceived Sorrow",
-    "Dazzle Vision",
-    "Face Down",
-    "Teenagers"
+const main = document.querySelector("main");
+
+
+let wispTypes = [
+    "Moxie",
+    "Vim",
+    "Chum",
 ]
 
-document.querySelector("main").innerHTML = `<ol>${displayArray(playlist)}</ol>`
+let jobTypes = [
+    "Librarian",
+    "Guard",
+    "Scientist",
+    "Doctor",
+    "Teacher",
+    "Trainer",
+    "Chef",
+    "Merchant"
+]
+
+main.innerHTML += `<ol>${displayArray(wispTypes)}</ol>`
+main.innerHTML += `<ol>${displayArray(jobTypes)}</ol>`
